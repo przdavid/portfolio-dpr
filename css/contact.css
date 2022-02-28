@@ -1,0 +1,204 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: Nunito;
+  src: url(../fonts/Nunito/Nunito-Regular.ttf);
+}
+@font-face {
+  font-family: Nunito-Bold;
+  src: url(../fonts/Nunito/Nunito-Bold.ttf);
+}
+@font-face {
+  font-family: Nunito-Medium;
+  src: url(../fonts/Nunito/Nunito-Medium.ttf);
+}
+@font-face {
+  font-family: Nunito-Light;
+  src: url(../fonts/Nunito/Nunito-Light.ttf);
+}
+body {
+  font-family: Roboto;
+  margin: 0 auto;
+}
+body a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  position: fixed;
+  inline-size: 100%;
+  font-family: Nunito;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding-block: 20px;
+  background-color: white;
+  top: 0;
+}
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+header ul li {
+  margin-inline: 3%;
+}
+header ul li a {
+  transition: 0.5s;
+  height: 30px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-border-after: white;
+          border-block-end: white;
+}
+header ul li a:hover {
+  transition: 0.5s;
+  color: #ec662b;
+  -webkit-border-after: solid 1px #ec662b;
+          border-block-end: solid 1px #ec662b;
+}
+
+.actual_page {
+  font-family: Nunito-Bold;
+  text-decoration: none;
+}
+.actual_page a {
+  color: #ec662b;
+  -webkit-border-before: solid 1px #ec662b;
+          border-block-start: solid 1px #ec662b;
+  -webkit-border-after: solid 1px #ec662b;
+          border-block-end: solid 1px #ec662b;
+}
+
+main {
+  -webkit-margin-before: 80px;
+          margin-block-start: 80px;
+  padding-inline: 25px;
+}
+main h1 {
+  margin-block: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: normal;
+}
+main h1 img {
+  width: 50px;
+  margin-block: 10px;
+}
+main h1 #name {
+  font-family: Nunito-Medium;
+  font-size: 30px;
+  margin-block: 5px;
+}
+main h1 #speciality {
+  font-family: Nunito-Light;
+  font-size: 15px;
+  color: #ec662b;
+  margin-block: 5px;
+}
+main section {
+  font-size: 14px;
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 800px) {
+  main section {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+main section .intro {
+  -webkit-border-before: solid 1px #ec662b;
+          border-block-start: solid 1px #ec662b;
+  -webkit-border-after: solid 1px #ec662b;
+          border-block-end: solid 1px #ec662b;
+  max-inline-size: 400px;
+}
+@media screen and (min-width: 800px) {
+  main section .intro {
+    -webkit-margin-end: 25px;
+            margin-inline-end: 25px;
+    block-size: 200px;
+    max-inline-size: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+main section article {
+  margin-block: 10px;
+}
+main section article ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section article ul li {
+  display: flex;
+  margin-block: 10px;
+  inline-size: 300px;
+}
+main section article ul li img {
+  inline-size: 20px;
+  padding: 15px;
+  background-color: #ec662b;
+}
+main section article ul li a {
+  padding-block: 15px;
+  -webkit-padding-start: 10px;
+          padding-inline-start: 10px;
+  background-color: #ec662b;
+  inline-size: 250px;
+  font-family: Nunito;
+  font-size: 16px;
+  -webkit-border-before: solid 1px #ec662b;
+          border-block-start: solid 1px #ec662b;
+  -webkit-border-after: solid 1px #ec662b;
+          border-block-end: solid 1px #ec662b;
+  color: white;
+  transition: 0.5s;
+}
+main section article ul li a:hover {
+  background-color: white;
+  transition: 0.5s;
+  color: #ec662b;
+}
+
+.email:before {
+  content: "Correo electrónico";
+}
+
+.email:hover:before {
+  content: "webdeveloper.dpr@gmail.com";
+}
+
+.github:before {
+  content: "Github";
+}
+
+.github:hover:before {
+  content: "przdavid";
+}
+
+.twitter:before {
+  content: "Twitter";
+}
+
+.twitter:hover:before {
+  content: "@webdev_dpr";
+}/*# sourceMappingURL=contact.css.map */

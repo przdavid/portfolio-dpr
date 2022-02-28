@@ -1,0 +1,120 @@
+// Importar fuentes
+@font-face 
+    font-family: Roboto
+    src: url(../fonts/Roboto/Roboto-Regular.ttf)
+
+@font-face
+    font-family: Nunito
+    src: url(../fonts/Nunito/Nunito-Regular.ttf)
+
+@font-face
+    font-family: Nunito-Bold
+    src: url(../fonts/Nunito/Nunito-Bold.ttf)
+
+@font-face
+    font-family: Nunito-Medium
+    src: url(../fonts/Nunito/Nunito-Medium.ttf)
+
+@font-face
+    font-family: Nunito-Light
+    src: url(../fonts/Nunito/Nunito-Light.ttf)
+
+@font-face
+    font-family: Dongle
+    src: url(../fonts/Dongle/Dongle-Regular.ttf)
+
+// Variables
+$color-principal: rgb(236, 102, 43)
+$border-boton: solid 1px $color-principal
+
+// Body
+body
+    font-family: Roboto
+    margin: 0 auto
+    a
+        text-decoration: none
+        color: black
+
+// Header
+header
+    position: fixed
+    inline-size: 100%
+    font-family: Nunito
+    text-transform: uppercase
+    font-size: 16px
+    padding-block: 20px
+    background-color: white
+    top: 0
+    ul
+        list-style: none
+        margin: 0
+        padding: 0
+        display: flex
+        justify-content: center
+        li
+            margin-inline: 3%
+            a
+                transition: 0.5s
+                height: 30px
+                width: 100px
+                display: flex
+                align-items: center
+                justify-content: center
+                border-block-end: white
+                &:hover
+                    transition: 0.5s
+                    color: $color-principal
+                    border-block-end: $border-boton
+
+.actual_page
+    font-family: Nunito-Bold
+    text-decoration: none
+    a
+        color: $color-principal
+        border-block-start: $border-boton
+        border-block-end: $border-boton
+        
+// Main
+main
+    margin-block-start: 80px
+    padding-inline: 25px 
+    h1
+        margin-block: 10px
+        display: flex
+        flex-direction: column
+        align-items: center
+        font-weight: normal
+        img
+            width: 50px
+            margin-block: 10px
+        #name
+            font-family: Nunito-Medium
+            font-size: 30px
+            margin-block: 5px
+        #speciality
+            font-family: Nunito-Light
+            font-size: 15px
+            color: $color-principal
+            margin-block: 5px
+
+.proyectos
+        display: flex
+        justify-content: center
+
+#cottagevacation
+    transition: 0.5s
+    background-color: rgb(145, 196, 131)
+    color: white
+    font-family: Dongle
+    font-weight: bold
+    font-size: 50px
+    block-size: 100px
+    display: flex
+    align-items: center
+    padding: 20px
+    border-radius: 20px
+    img
+        inline-size: 50px
+    &:hover
+        transition: 0.5s
+        box-shadow: 3px 5px 6px rgba(79, 120, 68, 0.8)
